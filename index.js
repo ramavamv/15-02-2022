@@ -2,4 +2,4 @@ function verificaIdade() {
   return 'teste';
 }
 
-verificaIdade('');
+console.log(verificaIdade());

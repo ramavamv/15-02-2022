@@ -1,0 +1,113 @@
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator
+
+
+npm i ascii-art 
+
+
+
+git init -- esta pasta ta usando git
+
+git add file1
+git commit -m "mensagem aqui"
+
+
+
+autenticar no git hub
+
+https    login e senha
+ssh      arquivos que comprovam tua identidade, chave publica e privada, privada fica comigo
+
+
+git reset HEAD~1 --DESFAZER O ÚLTIMO COMIT
+agora jogou para stage -- tem que fazer um git check algo assim
+
+git reset --hard HEAD~1   --  forço o desfazimento
+git push -f origin/main   -- envio 
+
+
+
+
+
+
+ESLINT
+
+Importância/Configuração de Linter
+Ajuda a verificar problemas antes dele acontecer
+Conveções de sintaxe
+Padrões definidos pelo time
+Levanta advertências quando há algo errado
+
+Ferramenta de linter para JavaScript escrita em Node.js
+Regras Definidas dentro de .eslintrc
+Como JavaScript é uma linguagem interpretada, muitos erros aparecem em runtime
+Identifica problemas no código
+	Loops infinitos
+	Métodos get retornam algo
+	Código analcançavel
+	JSDoc
+
+
+Lista de regras
+
+Regras
+quotes
+semi
+space-before-function-paren
+no-multi-spaces
+eol-last
+
+https://eslint.org/docs/user-guide/getting-started
+
+npm install eslint --save-dev
+
+npm init @eslint/config
+
+npx eslint yourfile.js
+
+
+
+instalandoi
+
+JavaScript modules (import/export) -- sincrono e assincrono
+CommonJS (require/exports)  -- padrão do node
+
+
+$ npm init @eslint/config
+Need to install the following packages:
+  @eslint/create-config
+Ok to proceed? (y) y
+√ How would you like to use ESLint? · style       
+√ What type of modules does your project use? · commonjs
+√ Which framework does your project use? · none
+√ Does your project use TypeScript? · No / Yes
+√ Where does your code run? · browser
+√ How would you like to define a style for your project? · guide
+√ Which style guide do you want to follow? · airbnb      
+√ What format do you want your config file to be in? · JavaScript
+Checking peerDependencies of eslint-config-airbnb-base@latest    
+The config that you've selected requires the following dependencies:
+
+eslint-config-airbnb-base@latest eslint@^7.32.0 || ^8.2.0 eslint-plugin-import@^2.25.2
+√ Would you like to install them now with npm? · No / Yes
+
+
+https://eslint.org/docs/user-guide/getting-started
+
+
+--para o erro a seguir
+Expected linebreaks to be 'LF' but found 'CRLF'  linebreak-style
+
+'linebreak-style': 'off',
+
+  "scripts": {
+    "start": "node index.js"
+  }
+ 
+https://stackoverflow.com/a/46999435/6916835
+
+https://eslint.org/docs/user-guide/configuring/rules
+"rules": {
+        "eqeqeq": "off",
+        "curly": "error",
+        "quotes": ["error", "double"]
+    }
